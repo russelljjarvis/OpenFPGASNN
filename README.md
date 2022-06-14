@@ -59,10 +59,9 @@ sudo apt-get install git mercurial build-essential bison clang cmake \
                      qtbase5-dev libqt5opengl5-dev gnat llvm
 ```
 ### Step 2 Use Summon FPGA script to compile and make some stuff
-  Installation instructions are platform dependent for Linux or WSL run:
-https://github.com/russelljjarvis/summon-fpga-tools
-
-
+  
+Installation instructions are platform dependent for Linux or WSL run:
+```
 git clone https://github.com/russelljjarvis/summon-fpga-tools.git or
 wget https://github.com/russelljjarvis/summon-fpga-tools/zipball/master; unzip master
 cd summon-fpga-tools
@@ -72,11 +71,10 @@ export PATH=~/sft/bin:$PATH
 
   
 ### Step 3 
+```
 sudo apt install verilator gtkwave 
-
+````
 ### Step 4 simulate: 
-
-</details>
 
 # Run the simple example
 ```bash
