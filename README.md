@@ -1,7 +1,5 @@
-<center>
-<h1> Open Spiking FPGA Code </h1>
-<h2> A Fully open Source Simple spiking neural network implementation on FPGA and A Reproducible Neural FPGA Workflow for the ICNS Lab. </h2>
-</center>
+<center> <h1> Open Spiking FPGA Code </h1></center>
+<center> <h3> A Fully open Source Simple spiking neural network Workflow and Implementation on FPGA </h3> </center>
 
 <p align="center">
   <a href="#Rational">Rational</a> •
@@ -20,7 +18,6 @@ Lattice Ice-40
 
 ### The FOSS Workflow Pieces  
   
-* Build Prerequisites - what we need before we begin
 * IceStorm Tools - create bitstreams file and programs boards
 * nextpnr - portable place and route
 * iVerilog - Verilog simulation and synthesis tool (optional)
@@ -50,7 +47,8 @@ https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-too
 <details>
 <summary> Steps </summary>
   
-### Step 1. 
+### Step 1. * Build Prerequisites - what we need before we begin
+
 ```bash
 sudo apt-get install git mercurial build-essential bison clang cmake \
                      flex gawk graphviz xdot libboost-all-dev \
@@ -61,10 +59,9 @@ sudo apt-get install git mercurial build-essential bison clang cmake \
                      qtbase5-dev libqt5opengl5-dev gnat llvm
 ```
 ### Step 2 Use Summon FPGA script to compile and make some stuff
-  Installation instructions are platform dependent for Linux or WSL run:
-https://github.com/russelljjarvis/summon-fpga-tools
-
-
+  
+Installation instructions are platform dependent for Linux or WSL run:
+```
 git clone https://github.com/russelljjarvis/summon-fpga-tools.git or
 wget https://github.com/russelljjarvis/summon-fpga-tools/zipball/master; unzip master
 cd summon-fpga-tools
@@ -74,11 +71,10 @@ export PATH=~/sft/bin:$PATH
 
   
 ### Step 3 
+```
 sudo apt install verilator gtkwave 
-
+````
 ### Step 4 simulate: 
-
-</details>
 
 # Run the simple example
 ```bash
