@@ -1,5 +1,5 @@
-# Open Spiking FPGA Code
-### A Fully open Source Simple spiking neural network implementation on FPGA and A Reproducible Neural FPGA Workflow for the ICNS Lab.
+<h1> Open Spiking FPGA Code </h1>
+<h2> A Fully open Source Simple spiking neural network implementation on FPGA and A Reproducible Neural FPGA Workflow for the ICNS Lab. </h2>
 
 
 <p align="center">
