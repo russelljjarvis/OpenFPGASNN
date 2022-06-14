@@ -137,7 +137,7 @@ reg [39:0] in2 = 40'b0101010101010101010101010101010101010101;
 reg [39:0] in3 = 40'b0000011000001100000110000011000001100000;
 wire neuron_7;
 wire neuron_8;
-
+//
 spiking_network U0 (
   .clk (clk),
   .neuron_1 (neuron_1),
@@ -146,15 +146,15 @@ spiking_network U0 (
   .neuron_7 (neuron_7),
   .neuron_8 (neuron_8)
 );
-/*
-#initial begin
-#  $dumpfile("fire_sequence_1.vcd");
-#  $dumpvars;
-#  $display("\t\ttime,\tclk,\tneuron_1,\tneuron_2,\tneuron_3, \tneuron_7, \tneuron_8");
-#  $monitor("%d,\t%b,\t%b,\t%b,\t%b,\t%b,\t%b",$time, clk, neuron_1, neuron_2, neuron_3, neuron_7, neuron_8);
-#	$finish;
-#end
-*/
+
+initial begin
+  $dumpfile("fire_sequence_1.vcd");
+  $dumpvars;
+  $display("\t\ttime,\tclk,\tneuron_1,\tneuron_2,\tneuron_3, \tneuron_7, \tneuron_8");
+  $monitor("%d,\t%b,\t%b,\t%b,\t%b,\t%b,\t%b",$time, clk, neuron_1, neuron_2, neuron_3, neuron_7, neuron_8);
+	/*$finish;*/
+end
+
 initial begin
 clk = 0;
 neuron_1 = 0;
