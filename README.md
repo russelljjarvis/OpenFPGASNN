@@ -1,6 +1,72 @@
 # Open Spike FPGA
+## A Fully open Source Simple spiking neural network implementation on FPGA and A Reproducible Neural FPGA Workflow for the ICNS Lab.
 
-A Fully open Source Simple spiking neural network implementation on FPGA.
+
+<p align="center">
+  <a href="#Rational">Rational</a> •
+  <a href="#Goals">Goals</a> •
+  <a href="#Installation-Steps">Installation Steps</a> •
+  <a href="#Open-Source-Alternative">Open Source Alternative</a> •
+  <a href="#TODO">TODO</a> •
+
+  
+</p>
+
+<details>
+<summary> Lattice Icebreaker and Ice stick FPGAs have FOSS automated workflows: </summary>
+
+![image](https://user-images.githubusercontent.com/7786645/165408804-49b5d01f-2d8d-4ffa-9096-e1297668351c.png)
+
+  
+  
+* Build Prerequisites - what we need before we begin
+* IceStorm Tools - create bitstreams file and programs boards
+* nextpnr - portable place and route
+* iVerilog - Verilog simulation and synthesis tool (optional)
+* Yosys - Verilog RTL synthesis
+* Verilator - Verilog simulation and linting (optional)
+
+  
+</details>
+
+
+[Lattice Tools](https://projectf.io/posts/building-ice40-fpga-toolchain/
+https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-toolchain-on-os-x0  
+
+[Hardware](https://www.ebay.com.au/itm/294911341271?chn=ps&_ul=AU&_trkparms=ispr%3D1&amdata=enc%3A15VigHYHPTJy5LEioAsdn_w46&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=294911341271&targetid=1597039205993&device=c&mktype=pla&googleloc=9071706&poi=&campaignid=14475548396&mkgroupid=128101662393&rlsatarget=pla-1597039205993&abcId=9300653&merchantid=561570219&gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWJV2lxIXDQSU_jsqCGkdIZW2a5OEJv8RRiyWQ4RGNXH4vBOw-hj-bBoCYd8QAvD_BwE)
+
+
+
+### Rational:
+* Document how to run a basic LIF network model on open FPGA tools using exclusively CLI/TCL as much as possible.
+* Simulate small scale SNNs via a workflow that uses the least amount of graphical tools and human manual interventions as possible.
+
+### Installation Steps
+<details>
+<summary> Steps </summary>
+  
+### Step 1 Get Quartus 
+
+### Step 2. Install Quartus
+
+### Step 3 configure quartus. 
+
+### Step 4 simulate: 
+
+</details>
+
+
+
+### TODO:
+- [x] Beggining of Quartus Manual Installation Steps. 
+- [ ] Long Term Rational: Command line scripts lend themselves to automation, GUIs lend themselves to human intervention.
+- [ ] Create an Open Source Alternative work flow for smaller neural network simulations
+- [ ] Command line installation and execution of Lattice Ice Breaker for a relatively small network.
+
+
+
+
+
 
 # Getting started
 
