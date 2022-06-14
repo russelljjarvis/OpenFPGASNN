@@ -1,5 +1,10 @@
-# SpikingNeuralNet
-A simple spiking neural network implementation.
+# Open Spike FPGA
+
+A Fully open Source Simple spiking neural network implementation on FPGA.
+
 # Getting started
 
-yosys -p "synth_ice40" testbench.sv
+# Run the simple example
+yosys -p "synth_ice40 -blif out.blif" testbench.sv
+arachne-pnr -d 5k out.blif -o out.asc
+iceprog out.bin
