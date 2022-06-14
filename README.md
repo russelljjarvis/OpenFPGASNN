@@ -18,7 +18,6 @@ Lattice Ice-40
 
 ### The FOSS Workflow Pieces  
   
-* Build Prerequisites - what we need before we begin
 * IceStorm Tools - create bitstreams file and programs boards
 * nextpnr - portable place and route
 * iVerilog - Verilog simulation and synthesis tool (optional)
@@ -48,7 +47,8 @@ https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-too
 <details>
 <summary> Steps </summary>
   
-### Step 1. 
+### Step 1. * Build Prerequisites - what we need before we begin
+
 ```bash
 sudo apt-get install git mercurial build-essential bison clang cmake \
                      flex gawk graphviz xdot libboost-all-dev \
