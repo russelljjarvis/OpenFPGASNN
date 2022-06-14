@@ -12,12 +12,12 @@
   
 </p>
 
-<details>
-<summary> Lattice Icebreaker and Ice stick FPGAs have FOSS automated workflows: </summary>
+### The Hardware: 
+#### Lattice Icebreaker 
 
 ![image](https://user-images.githubusercontent.com/7786645/165408804-49b5d01f-2d8d-4ffa-9096-e1297668351c.png)
 
-  
+### The FOSS Workflow Pieces  
   
 * Build Prerequisites - what we need before we begin
 * IceStorm Tools - create bitstreams file and programs boards
@@ -26,9 +26,7 @@
 * Yosys - Verilog RTL synthesis
 * Verilator - Verilog simulation and linting (optional)
 
-  
-</details>
-
+ 
 
 [Lattice Tools](https://projectf.io/posts/building-ice40-fpga-toolchain/
 https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-toolchain-on-os-x0  
@@ -54,16 +52,6 @@ https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-too
 ### Step 4 simulate: 
 
 </details>
-
-
-
-### TODO:
-- [x] Beggining of Quartus Manual Installation Steps. 
-- [ ] Long Term Rational: Command line scripts lend themselves to automation, GUIs lend themselves to human intervention.
-- [ ] Create an Open Source Alternative work flow for smaller neural network simulations
-- [ ] Command line installation and execution of Lattice Ice Breaker for a relatively small network.
-
-
 
 
 
@@ -97,3 +85,13 @@ arachne-pnr -d 5k out.blif -o out.asc
 
 iceprog out.bin
 ```
+
+
+
+
+### TODO:
+- [x]  
+- [ ] Long Term Rational: Command line scripts lend themselves to automation, GUIs lend themselves to human intervention.
+- [ ] Create an Open Source Alternative work flow for smaller neural network simulations
+- [ ] Command line installation and execution of Lattice Ice Breaker for a relatively small network.
+
