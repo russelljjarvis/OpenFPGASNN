@@ -89,6 +89,7 @@ https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-too
 
 ### TODO:
 - [x] LED Blink on Lattice
+- [x] Some Verilator Output
 - [ ] CI verilator. Demonstrate that HDL engineers can automate and do code integration in the cloud just like the rest of the software world.
 - [ ] verilator GTK wave verification of SNN signals
 - [ ] Command line scripts lend themselves to automation, GUIs lend themselves to human intervention.
