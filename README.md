@@ -20,8 +20,8 @@
 
 
 
-# Getting started
-### Installation Steps
+### Getting started
+#### Installation Steps
 <details>
 <summary> Steps </summary>
   
