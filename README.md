@@ -1,9 +1,10 @@
-# Open Spike FPGA
-## A Fully open Source Simple spiking neural network implementation on FPGA and A Reproducible Neural FPGA Workflow for the ICNS Lab.
+# Open Spiking FPGA Code
+### A Fully open Source Simple spiking neural network implementation on FPGA and A Reproducible Neural FPGA Workflow for the ICNS Lab.
 
 
 <p align="center">
   <a href="#Rational">Rational</a> •
+  <a href="#Getting Started">Getting-Started</a> •
   <a href="#Goals">Goals</a> •
   <a href="#Installation-Steps">Installation Steps</a> •
   <a href="#Open-Source-Alternative">Open Source Alternative</a> •
