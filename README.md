@@ -84,12 +84,13 @@ arachne-pnr -d 5k out.blif -o out.asc
 
 iceprog out.bin
 ```
-
+</details>
 
 
 
 ### TODO:
 - [x] LED Blink on Lattice
+- [ ] CI verilator. Demonstrate that HDL engineers can automate and do code integration in the cloud just like the rest of the software world.
 - [ ] verilator GTK wave verification of SNN signals
 - [ ] Command line scripts lend themselves to automation, GUIs lend themselves to human intervention.
 - [ ] Create an Open Source Alternative work flow for smaller neural network simulations
