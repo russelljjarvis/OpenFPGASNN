@@ -11,33 +11,11 @@
   
 </p>
 
-### The Hardware: 
-Lattice Ice-40
-#### Lattice Icebreaker 
-
-
-### The FOSS Workflow Pieces  
-  
-* IceStorm Tools - create bitstreams file and programs boards
-* nextpnr - portable place and route
-* iVerilog - Verilog simulation and synthesis tool (optional)
-* Yosys - Verilog RTL synthesis
-* Verilator - Verilog simulation and linting (optional)
-
-<!---
-![image](https://user-images.githubusercontent.com/7786645/165408804-49b5d01f-2d8d-4ffa-9096-e1297668351c.png)
- 
-
-[Lattice Tools](https://projectf.io/posts/building-ice40-fpga-toolchain/
-https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-toolchain-on-os-x0  
-
---->
-
 
 ### Rational:
+* HDL/FPGA hardware engineers should enjoy Continuous Integration and Agile workflows just like the mainstream software ecosystem.
 * Document how to run a basic LIF network model on open FPGA tools using exclusively CLI/TCL as much as possible.
 * Simulate small scale SNNs via a workflow that uses the least amount of graphical tools and human manual interventions as possible.
-
 
 
 
@@ -85,6 +63,29 @@ arachne-pnr -d 5k out.blif -o out.asc
 iceprog out.bin
 ```
 </details>
+
+
+### The Hardware: 
+Lattice Ice-40
+#### Lattice Icebreaker 
+
+
+### The FOSS Workflow Pieces  
+  
+* IceStorm Tools - create bitstreams file and programs boards
+* nextpnr - portable place and route
+* iVerilog - Verilog simulation and synthesis tool (optional)
+* Yosys - Verilog RTL synthesis
+* Verilator - Verilog simulation and linting (optional)
+
+<!---
+![image](https://user-images.githubusercontent.com/7786645/165408804-49b5d01f-2d8d-4ffa-9096-e1297668351c.png)
+ 
+
+[Lattice Tools](https://projectf.io/posts/building-ice40-fpga-toolchain/
+https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-toolchain-on-os-x0  
+
+--->
 
 
 
