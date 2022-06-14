@@ -40,28 +40,16 @@ https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-too
 * Document how to run a basic LIF network model on open FPGA tools using exclusively CLI/TCL as much as possible.
 * Simulate small scale SNNs via a workflow that uses the least amount of graphical tools and human manual interventions as possible.
 
-### Installation Steps
-<details>
-<summary> Steps </summary>
-  
-### Step 1 Get Quartus 
-
-### Step 2. Install Quartus
-
-### Step 3 configure quartus. 
-
-### Step 4 simulate: 
-
-</details>
 
 
 
 
 # Getting started
-
-Installation instructions are platform dependent for Linux or WSL run:
-https://github.com/russelljjarvis/summon-fpga-tools
-
+### Installation Steps
+<details>
+<summary> Steps </summary>
+  
+### Step 1. 
 ```bash
 sudo apt-get install git mercurial build-essential bison clang cmake \
                      flex gawk graphviz xdot libboost-all-dev \
@@ -70,13 +58,25 @@ sudo apt-get install git mercurial build-essential bison clang cmake \
                      libreadline-dev zlib1g-dev pkg-config python \
                      python3 python3-dev tcl-dev autoconf gperf \
                      qtbase5-dev libqt5opengl5-dev gnat llvm
+```
+### Step 2 Use Summon FPGA script to compile and make some stuff
+  Installation instructions are platform dependent for Linux or WSL run:
+https://github.com/russelljjarvis/summon-fpga-tools
 
-git clone https://github.com/esden/summon-fpga-tools.git or
-wget https://github.com/esden/summon-fpga-tools/zipball/master; unzip master
+
+git clone https://github.com/russelljjarvis/summon-fpga-tools.git or
+wget https://github.com/russelljjarvis/summon-fpga-tools/zipball/master; unzip master
 cd summon-fpga-tools
 ./summon-fpga-tools.sh
 export PATH=~/sft/bin:$PATH
 ```
+
+  
+### Step 3 configure quartus. 
+
+### Step 4 simulate: 
+
+</details>
 
 # Run the simple example
 ```bash
