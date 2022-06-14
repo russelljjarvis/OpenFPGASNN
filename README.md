@@ -1,5 +1,5 @@
 <center> <h1> Open Spiking FPGA Code </h1></center>
-<center> <h3> A Fully open Source Simple spiking neural network implementation on FPGA and A Reproducible Neural FPGA Workflow </h3> </center>
+<center> <h3> A Fully open Source Simple spiking neural network Workflow and Implementation on FPGA </h3> </center>
 
 <p align="center">
   <a href="#Rational">Rational</a> •
