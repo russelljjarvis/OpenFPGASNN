@@ -7,16 +7,15 @@
   <a href="#Getting Started">Getting-Started</a> •
   <a href="#Goals">Goals</a> •
   <a href="#Installation-Steps">Installation Steps</a> •
-  <a href="#Open-Source-Alternative">Open Source Alternative</a> •
   <a href="#TODO">TODO</a> •
 
   
 </p>
 
 ### The Hardware: 
+Lattice Ice-40
 #### Lattice Icebreaker 
 
-![image](https://user-images.githubusercontent.com/7786645/165408804-49b5d01f-2d8d-4ffa-9096-e1297668351c.png)
 
 ### The FOSS Workflow Pieces  
   
@@ -27,6 +26,7 @@
 * Yosys - Verilog RTL synthesis
 * Verilator - Verilog simulation and linting (optional)
 
+![image](https://user-images.githubusercontent.com/7786645/165408804-49b5d01f-2d8d-4ffa-9096-e1297668351c.png)
  
 
 [Lattice Tools](https://projectf.io/posts/building-ice40-fpga-toolchain/
