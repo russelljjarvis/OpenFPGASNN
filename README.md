@@ -4,8 +4,6 @@
 <p align="center">
   <a href="#Rational">Rational</a> •
   <a href="#Getting Started">Getting-Started</a> •
-  <a href="#Goals">Goals</a> •
-  <a href="#Installation-Steps">Installation Steps</a> •
   <a href="#TODO">TODO</a> •
 
   
@@ -21,9 +19,9 @@
 
 
 ### Getting started
-#### Installation Steps
+ 
 <details>
-<summary> Steps </summary>
+#### <summary> Installation Steps </summary>
   
 ### Step 1. * Build Prerequisites - what we need before we begin
 
