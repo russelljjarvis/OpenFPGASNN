@@ -20,9 +20,9 @@
 
 ### Getting started
  
-<details>
 #### <summary> Installation Steps </summary>
-  
+<details>
+
 ### Step 1. * Build Prerequisites - what we need before we begin
 
 ```bash
@@ -64,17 +64,19 @@ iceprog out.bin
 
 
 ### The Hardware: 
-Lattice Ice-40
+Lattice Ice-40 (not a very powerful FPGA, but its one of only a few models that support a fully FOSS ecosystem).
 #### Lattice Icebreaker 
 
 
-### The FOSS Workflow Pieces  
-  
+### <summary> The FOSS Workflow Pieces </summary>
+
+<details>
 * IceStorm Tools - create bitstreams file and programs boards
 * nextpnr - portable place and route
 * iVerilog - Verilog simulation and synthesis tool (optional)
 * Yosys - Verilog RTL synthesis
 * Verilator - Verilog simulation and linting (optional)
+</details>
 
 <!---
 ![image](https://user-images.githubusercontent.com/7786645/165408804-49b5d01f-2d8d-4ffa-9096-e1297668351c.png)
@@ -87,7 +89,8 @@ https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-too
 
 
 
-### TODO:
+### <summary> TODO:  </summary>
+<details>
 - [x] LED Blink on Lattice
 - [x] Some Verilator Output
 - [ ] CI verilator. Demonstrate that HDL engineers can automate and do code integration in the cloud just like the rest of the software world.
@@ -97,3 +100,4 @@ https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-too
 - [ ] Command line installation and execution of Lattice Ice Breaker for a relatively small network.
 
 [Hardware](https://www.ebay.com.au/itm/294911341271?chn=ps&_ul=AU&_trkparms=ispr%3D1&amdata=enc%3A15VigHYHPTJy5LEioAsdn_w46&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=294911341271&targetid=1597039205993&device=c&mktype=pla&googleloc=9071706&poi=&campaignid=14475548396&mkgroupid=128101662393&rlsatarget=pla-1597039205993&abcId=9300653&merchantid=561570219&gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWJV2lxIXDQSU_jsqCGkdIZW2a5OEJv8RRiyWQ4RGNXH4vBOw-hj-bBoCYd8QAvD_BwE)
+</details>
