@@ -12,7 +12,7 @@
 
 ### Rational:
 * HDL/FPGA hardware engineers should enjoy Continuous Integration and Agile workflows just like the mainstream software ecosystem.
-* Document how to run a basic LIF network model on open FPGA tools using exclusively CLI/TCL as much as possible.
+* Run a basic LIF network on open FPGA tools using exclusively using command line tools which can be automated.
 * Simulate small scale SNNs via a workflow that uses the least amount of graphical tools and human manual interventions as possible.
 
 
