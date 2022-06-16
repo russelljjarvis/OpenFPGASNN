@@ -50,18 +50,17 @@ export PATH=~/sft/bin:$PATH
 ```
 sudo apt install verilator gtkwave 
 ````
-### Step 4 simulate: 
 
-# Run the simple example
-```bash
-yosys -p "synth_ice40 -blif out.blif" testbench.sv
-
-arachne-pnr -d 5k out.blif -o out.asc
-
-iceprog out.bin
-```
 </details>
 
+
+#### Deploy the simple example to FPGA
+```
+yosys -p "synth_ice40 -blif out.blif" testbench.sv
+arachne-pnr -d 5k out.blif -o out.asc
+iceprog out.bin
+```
+### Simulate:
 
 ### The Hardware: 
 Lattice Ice-40 (not a very powerful FPGA, but its one of only a few models that support a fully FOSS ecosystem).
@@ -71,11 +70,13 @@ Lattice Ice-40 (not a very powerful FPGA, but its one of only a few models that 
 ### <summary> The FOSS Workflow Pieces </summary>
 
 <details>
+  
 * IceStorm Tools - create bitstreams file and programs boards
 * nextpnr - portable place and route
 * iVerilog - Verilog simulation and synthesis tool (optional)
 * Yosys - Verilog RTL synthesis
 * Verilator - Verilog simulation and linting (optional)
+
 </details>
 
 <!---
