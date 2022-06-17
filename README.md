@@ -61,6 +61,9 @@ arachne-pnr -d 5k out.blif -o out.asc
 iceprog out.bin
 ```
 ### Simulate:
+```bash
+make
+```
 
 ### The Hardware: 
 Lattice Ice-40 (not a very powerful FPGA, but its one of only a few models that support a fully FOSS ecosystem).
@@ -102,3 +105,7 @@ https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-too
 
 [Hardware](https://www.ebay.com.au/itm/294911341271?chn=ps&_ul=AU&_trkparms=ispr%3D1&amdata=enc%3A15VigHYHPTJy5LEioAsdn_w46&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=294911341271&targetid=1597039205993&device=c&mktype=pla&googleloc=9071706&poi=&campaignid=14475548396&mkgroupid=128101662393&rlsatarget=pla-1597039205993&abcId=9300653&merchantid=561570219&gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWJV2lxIXDQSU_jsqCGkdIZW2a5OEJv8RRiyWQ4RGNXH4vBOw-hj-bBoCYd8QAvD_BwE)
 </details>
+
+Supported Boards:
+https://github.com/FPGAwars/apio#supported-boards
+https://stackoverflow.com/questions/72354437/what-is-the-most-powerful-fpga-that-yosys-project-icestorm-will-target
