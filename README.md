@@ -6,7 +6,7 @@
   <a href="#Getting Started">Getting-Started</a> •
   <a href="#TODO">TODO</a> •
 
-  
+
 </p>
 
 
@@ -19,7 +19,7 @@
 
 
 ### Getting started
- 
+
 #### <summary> Installation Steps </summary>
 <details>
 
@@ -32,10 +32,10 @@ sudo apt-get install git mercurial build-essential bison clang cmake \
                      libmpfr-dev libncurses5-dev libmpc-dev \
                      libreadline-dev zlib1g-dev pkg-config python \
                      python3 python3-dev tcl-dev autoconf gperf \
-                     qtbase5-dev libqt5opengl5-dev gnat llvm
+                     qtbase5-dev libqt5opengl5-dev gnat llvm apio verilator gtkwave
 ```
 ### Step 2 Use Summon FPGA script to compile and make some stuff
-  
+
 Installation instructions are platform dependent for Linux or WSL run:
 ```
 git clone https://github.com/russelljjarvis/summon-fpga-tools.git or
@@ -45,12 +45,12 @@ cd summon-fpga-tools
 export PATH=~/sft/bin:$PATH
 ```
 
-  
-### Step 3 
+
+### Step 3
 ```
-sudo apt install verilator gtkwave 
+sudo apt install verilator gtkwave
 ````
-### Step 4 simulate: 
+### Step 4 deploy to board:
 
 # Run the simple example
 ```bash
@@ -62,10 +62,16 @@ iceprog out.bin
 ```
 </details>
 
+### Step 5 Simulate:
+```
+bash
 
-### The Hardware: 
+```
+
+
+### The Hardware:
 Lattice Ice-40 (not a very powerful FPGA, but its one of only a few models that support a fully FOSS ecosystem).
-#### Lattice Icebreaker 
+#### Lattice Icebreaker
 
 
 ### <summary> The FOSS Workflow Pieces </summary>
@@ -80,7 +86,7 @@ Lattice Ice-40 (not a very powerful FPGA, but its one of only a few models that 
 
 <!---
 ![image](https://user-images.githubusercontent.com/7786645/165408804-49b5d01f-2d8d-4ffa-9096-e1297668351c.png)
- 
+
 
 [Lattice Tools](https://projectf.io/posts/building-ice40-fpga-toolchain/
 https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-toolchain-on-os-x0  
