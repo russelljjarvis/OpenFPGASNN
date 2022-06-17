@@ -63,6 +63,7 @@ iceprog out.bin
 ### Simulate:
 ```bash
 make
+gtkwave file.asc
 ```
 
 ### The Hardware: 
