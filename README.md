@@ -52,41 +52,52 @@ sudo apt install verilator gtkwave
 ````
 ### Step 4 deploy to board:
 
-# Run the simple example
-```bash
+</details>
+
+
+#### Deploy the simple example to FPGA
+```
 yosys -p "synth_ice40 -blif out.blif" testbench.sv
 
 arachne-pnr -d 5k out.blif -o out.asc
 
 iceprog out.bin
 ```
-</details>
 
-### Step 5 Simulate:
+or 
 ```
-bash
+make
+make burn
+```
+### Simulate:
+```bash
 
+make Vtop
+obj_dir/Vtop -t
+gtkwave wave.vcd
 ```
 
 
 ### The Hardware:
 Lattice Ice-40 (not a very powerful FPGA, but its one of only a few models that support a fully FOSS ecosystem).
-#### Lattice Icebreaker
+#### Lattice Icebreaker 
 
 
 ### <summary> The FOSS Workflow Pieces </summary>
 
 <details>
+  
 * IceStorm Tools - create bitstreams file and programs boards
 * nextpnr - portable place and route
 * iVerilog - Verilog simulation and synthesis tool (optional)
 * Yosys - Verilog RTL synthesis
 * Verilator - Verilog simulation and linting (optional)
+
 </details>
 
 <!---
 ![image](https://user-images.githubusercontent.com/7786645/165408804-49b5d01f-2d8d-4ffa-9096-e1297668351c.png)
-
+ 
 
 [Lattice Tools](https://projectf.io/posts/building-ice40-fpga-toolchain/
 https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-toolchain-on-os-x0  
