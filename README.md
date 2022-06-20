@@ -6,7 +6,7 @@
   <a href="#Getting Started">Getting-Started</a> •
   <a href="#TODO">TODO</a> •
 
-
+  
 </p>
 
 
@@ -19,7 +19,7 @@
 
 
 ### Getting started
-
+ 
 #### <summary> Installation Steps </summary>
 <details>
 
@@ -35,7 +35,7 @@ sudo apt-get install git mercurial build-essential bison clang cmake \
                      qtbase5-dev libqt5opengl5-dev gnat llvm apio verilator gtkwave
 ```
 ### Step 2 Use Summon FPGA script to compile and make some stuff
-
+  
 Installation instructions are platform dependent for Linux or WSL run:
 ```
 git clone https://github.com/russelljjarvis/summon-fpga-tools.git or
@@ -45,12 +45,11 @@ cd summon-fpga-tools
 export PATH=~/sft/bin:$PATH
 ```
 
-
-### Step 3
+  
+### Step 3 
 ```
-sudo apt install verilator gtkwave
+sudo apt install verilator gtkwave 
 ````
-### Step 4 deploy to board:
 
 </details>
 
@@ -58,9 +57,7 @@ sudo apt install verilator gtkwave
 #### Deploy the simple example to FPGA
 ```
 yosys -p "synth_ice40 -blif out.blif" testbench.sv
-
 arachne-pnr -d 5k out.blif -o out.asc
-
 iceprog out.bin
 ```
 
@@ -77,8 +74,7 @@ obj_dir/Vtop -t
 gtkwave wave.vcd
 ```
 
-
-### The Hardware:
+### The Hardware: 
 Lattice Ice-40 (not a very powerful FPGA, but its one of only a few models that support a fully FOSS ecosystem).
 #### Lattice Icebreaker 
 
@@ -106,8 +102,7 @@ https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-too
 
 
 
-### <summary> TODO:  </summary>
-<details>
+### TODO:  
 - [x] LED Blink on Lattice
 - [x] Some Verilator Output
 - [ ] CI verilator. Demonstrate that HDL engineers can automate and do code integration in the cloud just like the rest of the software world.
@@ -118,3 +113,7 @@ https://www.twam.info/software/using-the-icebreaker-with-an-open-source-fpga-too
 
 [Hardware](https://www.ebay.com.au/itm/294911341271?chn=ps&_ul=AU&_trkparms=ispr%3D1&amdata=enc%3A15VigHYHPTJy5LEioAsdn_w46&norover=1&mkevt=1&mkrid=705-139619-5960-0&mkcid=2&itemid=294911341271&targetid=1597039205993&device=c&mktype=pla&googleloc=9071706&poi=&campaignid=14475548396&mkgroupid=128101662393&rlsatarget=pla-1597039205993&abcId=9300653&merchantid=561570219&gclid=CjwKCAjwsJ6TBhAIEiwAfl4TWJV2lxIXDQSU_jsqCGkdIZW2a5OEJv8RRiyWQ4RGNXH4vBOw-hj-bBoCYd8QAvD_BwE)
 </details>
+
+Supported Boards:
+https://github.com/FPGAwars/apio#supported-boards
+https://stackoverflow.com/questions/72354437/what-is-the-most-powerful-fpga-that-yosys-project-icestorm-will-target
